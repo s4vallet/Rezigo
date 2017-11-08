@@ -33,7 +33,7 @@
         android:background="@android:color/holo_orange_dark"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="onClick"
-        android:text="Chercher un trajet."
+        android:text="Chercher un trajet.."
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"

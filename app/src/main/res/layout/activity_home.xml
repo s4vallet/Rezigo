@@ -10,7 +10,7 @@
         android:id="@+id/button_proposer"
         android:layout_width="230dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="160dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/holo_orange_dark"
@@ -21,7 +21,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <Button
         android:id="@+id/button_chercher"
@@ -29,26 +31,76 @@
         android:layout_height="100dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:background="@android:color/holo_orange_dark"
         android:fontFamily="sans-serif-smallcaps"
         android:onClick="onClick"
-        android:text="Chercher un trajet.."
+        android:text="Chercher un trajet"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="70dp"
-        android:layout_height="71dp"
-        android:layout_marginBottom="0dp"
-        android:layout_marginRight="0dp"
-        android:background="@android:color/background_light"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:elevation="8dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:tint="@android:color/holo_orange_dark"
+            app:srcCompat="@drawable/ic_list"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:tint="@android:color/holo_orange_dark"
+            app:srcCompat="@drawable/ic_home"
+            tools:layout_editor_absoluteX="-5dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+        <ImageButton
+            android:id="@+id/button_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:tint="@android:color/holo_orange_dark"
+            app:srcCompat="@drawable/ic_info"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:onClick="onClick"
+            android:tint="@android:color/holo_orange_dark"
+            app:srcCompat="@drawable/ic_leave"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="451dp" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityChercher" />
-        <activity android:name=".ActivityProposer"></activity>
+        <activity android:name=".ActivityProposer" />
+        <activity android:name=".ActivityInformation"/>
     </application>
 
 </manifest>

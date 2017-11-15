@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
     Button buttonProposer, buttonChercher;
+    ImageButton buttonInfo;
 
 
 
@@ -18,7 +20,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         buttonChercher = (Button) findViewById(R.id.button_chercher);
         buttonProposer = (Button) findViewById(R.id.button_proposer);
+        buttonInfo = (ImageButton) findViewById(R.id.button_info);
     }
+
 
     @Override
     public void onClick(View view) {
@@ -28,6 +32,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_proposer :
                 startActivityProposer();
+                break;
+            case R.id.button_info :
+
+                startActivityInformation();
                 break;
         }
     }
@@ -39,6 +47,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void startActivityChercher() {
         Intent intent = new  Intent(HomeActivity.this, ActivityChercher.class);
+        startActivity(intent);
+    }
+
+    private void startActivityInformation() {
+        Intent intent = new  Intent(HomeActivity.this, ActivityInformation.class);
         startActivity(intent);
     }
 }

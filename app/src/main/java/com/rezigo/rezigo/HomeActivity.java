@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
 import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
-    Button buttonProposer, buttonChercher;
-    ImageButton buttonInfo;
+
+    ImageButton buttonHome;
 
 
 
@@ -18,9 +18,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        buttonChercher = (Button) findViewById(R.id.button_chercher);
-        buttonProposer = (Button) findViewById(R.id.button_proposer);
-        buttonInfo = (ImageButton) findViewById(R.id.button_info);
+
+        buttonHome = (ImageButton) findViewById(R.id.button_home);
+        buttonHome.setBackgroundColor(0xfdfdfd);
     }
 
 
@@ -34,14 +34,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivityProposer();
                 break;
             case R.id.button_info :
-
                 startActivityInformation();
+                break;
+            case R.id.button_list:
+                startActivityList();
+                break;
+            case R.id.button_home :
+                //startHomeActivity();
                 break;
         }
     }
 
     private void startActivityProposer() {
         Intent intent = new Intent(HomeActivity.this, ActivityProposer.class);
+        startActivity(intent);
+    }
+    private void startActivityList() {
+        Intent intent = new Intent(HomeActivity.this, ActivityList.class);
         startActivity(intent);
     }
 

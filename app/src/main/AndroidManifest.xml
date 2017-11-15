@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ActivityChercher" />
         <activity android:name=".ActivityProposer" />
-        <activity android:name=".ActivityInformation"/>
+        <activity android:name=".ActivityInformation" />
+        <activity android:name=".ActivityList"></activity>
     </application>
 
 </manifest>

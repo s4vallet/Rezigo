@@ -6,28 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class ActivityInformation extends AppCompatActivity implements View.OnClickListener{
+public class ActivityLeave extends AppCompatActivity {
+    ImageButton buttonLeave;
 
-
-    ImageButton buttonInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_information);
+        setContentView(R.layout.activity_leave);
 
-
-        buttonInfo = (ImageButton) findViewById(R.id.button_info);
-        buttonInfo.setBackgroundColor(0xfdfdfd);
+        buttonLeave = (ImageButton) findViewById(R.id.button_leave);
+        buttonLeave.setBackgroundColor(0xfdfdfd);
     }
 
-    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_info :
-               // startActivityInformation();
+                finish();
+                startActivityInformation();
                 break;
             case R.id.button_home :
-               // startHomeActivity();
+                // startHomeActivity();
                 finish();
                 break;
             case R.id.button_list :
@@ -35,18 +33,18 @@ public class ActivityInformation extends AppCompatActivity implements View.OnCli
                 startActivityList();
                 break;
             case R.id.button_leave :
-                finish();
-                startActivityLeave();
+                //finish();
+                //startActivityLeave();
                 break;
         }
     }
 
-    private void startActivityLeave() {
-        Intent intent = new Intent(ActivityInformation.this, ActivityLeave.class);
+    private void startActivityList() {
+        Intent intent = new Intent(ActivityLeave.this, ActivityList.class);
         startActivity(intent);
     }
-    private void startActivityList() {
-        Intent intent = new Intent(ActivityInformation.this, ActivityList.class);
+    private void startActivityInformation() {
+        Intent intent = new Intent(ActivityLeave.this, ActivityInformation.class);
         startActivity(intent);
     }
 }

@@ -27,14 +27,14 @@
         app:srcCompat="@drawable/ic_list" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/button_leave"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@android:color/white"
         android:onClick="onClick"
         android:tint="@android:color/holo_orange_dark"
-        app:srcCompat="@drawable/ic_info" />
+        app:srcCompat="@drawable/ic_leave" />
 
     <ImageButton
         android:id="@+id/button_info"
@@ -44,6 +44,6 @@
         android:background="@android:color/white"
         android:onClick="onClick"
         android:tint="@android:color/holo_orange_dark"
-        app:srcCompat="@drawable/ic_leave" />
+        app:srcCompat="@drawable/ic_info" />
 
 </LinearLayout>

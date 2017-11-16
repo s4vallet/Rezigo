@@ -39,6 +39,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_list:
                 startActivityList();
                 break;
+            case R.id.button_leave:
+                startActivityLeave();
+                break;
             case R.id.button_home :
                 //startHomeActivity();
                 break;
@@ -49,16 +52,20 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(HomeActivity.this, ActivityProposer.class);
         startActivity(intent);
     }
-    private void startActivityList() {
-        Intent intent = new Intent(HomeActivity.this, ActivityList.class);
-        startActivity(intent);
-    }
 
     private void startActivityChercher() {
         Intent intent = new  Intent(HomeActivity.this, ActivityChercher.class);
         startActivity(intent);
     }
+    private void startActivityList() {
+        Intent intent = new Intent(HomeActivity.this, ActivityList.class);
+        startActivity(intent);
+    }
 
+    private void startActivityLeave() {
+        Intent intent = new Intent(HomeActivity.this, ActivityLeave.class);
+        startActivity(intent);
+    }
     private void startActivityInformation() {
         Intent intent = new  Intent(HomeActivity.this, ActivityInformation.class);
         startActivity(intent);

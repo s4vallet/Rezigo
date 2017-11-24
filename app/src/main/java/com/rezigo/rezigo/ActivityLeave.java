@@ -28,9 +28,9 @@ public class ActivityLeave extends AppCompatActivity {
                 // startHomeActivity();
                 finish();
                 break;
-            case R.id.button_list :
+            case R.id.button_maps:
                 finish();
-                startActivityList();
+                startActivityMaps();
                 break;
             case R.id.button_leave :
                 //finish();
@@ -39,8 +39,8 @@ public class ActivityLeave extends AppCompatActivity {
         }
     }
 
-    private void startActivityList() {
-        Intent intent = new Intent(ActivityLeave.this, ActivityList.class);
+    private void startActivityMaps() {
+        Intent intent = new Intent(ActivityLeave.this, ActivityMaps.class);
         startActivity(intent);
     }
     private void startActivityInformation() {

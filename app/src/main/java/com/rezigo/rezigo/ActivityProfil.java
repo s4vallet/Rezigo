@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 
 public class ActivityProfil extends AppCompatActivity {
 
@@ -26,9 +25,9 @@ public class ActivityProfil extends AppCompatActivity {
                 // startHomeActivity();
                 finish();
                 break;
-            case R.id.button_list :
+            case R.id.button_maps:
                 finish();
-                startActivityList();
+                startActivityMaps();
                 break;
             case R.id.button_leave :
                 finish();
@@ -44,8 +43,8 @@ public class ActivityProfil extends AppCompatActivity {
         Intent intent = new Intent(ActivityProfil.this, ActivityInformation.class);
         startActivity(intent);
     }
-    private void startActivityList() {
-        Intent intent = new Intent(ActivityProfil.this, ActivityList.class);
+    private void startActivityMaps() {
+        Intent intent = new Intent(ActivityProfil.this, ActivityMaps.class);
         startActivity(intent);
     }
 }

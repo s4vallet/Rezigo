@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/ic_home" />
 
     <ImageButton
-        android:id="@+id/button_list"
+        android:id="@+id/button_maps"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

@@ -30,9 +30,9 @@ public class ActivityInformation extends AppCompatActivity implements View.OnCli
                // startHomeActivity();
                 finish();
                 break;
-            case R.id.button_list :
+            case R.id.button_maps:
                 finish();
-                startActivityList();
+                startActivityMaps();
                 break;
             case R.id.button_leave :
                 finish();
@@ -45,8 +45,8 @@ public class ActivityInformation extends AppCompatActivity implements View.OnCli
         Intent intent = new Intent(ActivityInformation.this, ActivityLeave.class);
         startActivity(intent);
     }
-    private void startActivityList() {
-        Intent intent = new Intent(ActivityInformation.this, ActivityList.class);
+    private void startActivityMaps() {
+        Intent intent = new Intent(ActivityInformation.this, ActivityMaps.class);
         startActivity(intent);
     }
 }

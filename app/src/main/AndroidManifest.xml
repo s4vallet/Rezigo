@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -20,7 +20,8 @@
         <activity android:name=".ActivityProposer" />
         <activity android:name=".ActivityInformation" />
         <activity android:name=".ActivityList" />
-        <activity android:name=".ActivityLeave"></activity>
+        <activity android:name=".ActivityLeave" />
+        <activity android:name=".ActivityProfil"></activity>
     </application>
 
 </manifest>

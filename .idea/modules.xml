@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Rezigo.iml" filepath="$PROJECT_DIR$/Rezigo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://F:\Loys documents\ENIB\Projet-POO s6\Rezigo\app\app.iml" filepath="F:\Loys documents\ENIB\Projet-POO s6\Rezigo\app\app.iml" />
     </modules>
   </component>
 </project>

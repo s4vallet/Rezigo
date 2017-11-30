@@ -42,7 +42,8 @@
 
         <activity
             android:name=".ActivityMaps"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ActivityList"></activity>
     </application>
 
 </manifest>

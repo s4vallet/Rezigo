@@ -2,4 +2,5 @@
     <string name="app_name">Rezigo</string>
     <string name="title_activity_maps">Map</string>
     <string name="rechercher_un_trajet_correspondant">Rechercher un trajet correspondant</string>
+    <string name="title_activity_preferences">ActivityPreferences</string>
 </resources>

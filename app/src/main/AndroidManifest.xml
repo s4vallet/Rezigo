@@ -43,7 +43,7 @@
         <activity
             android:name=".ActivityMaps"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".ActivityList"></activity>
+        <activity android:name=".ActivityList" />
     </application>
 
 </manifest>

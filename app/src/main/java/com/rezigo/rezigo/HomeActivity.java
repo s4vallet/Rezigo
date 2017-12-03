@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import android.widget.ImageButton;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
-    Button buttonProposer, buttonChercher;
+
+    ImageButton buttonHome;
 
 
 
@@ -16,9 +18,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        buttonChercher = (Button) findViewById(R.id.button_chercher);
-        buttonProposer = (Button) findViewById(R.id.button_proposer);
+
+        buttonHome = (ImageButton) findViewById(R.id.button_home);
+        buttonHome.setBackgroundColor(0xfdfdfd);
     }
+
 
     @Override
     public void onClick(View view) {
@@ -28,6 +32,19 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_proposer :
                 startActivityProposer();
+                break;
+            case R.id.button_info :
+                startActivityInformation();
+                break;
+            case R.id.button_maps:
+                startActivityMaps();
+                break;
+            case R.id.button_leave:
+                startActivityLeave();
+                break;
+
+            case R.id.button_profil :
+                startActivityProfil();
                 break;
         }
     }
@@ -39,6 +56,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void startActivityChercher() {
         Intent intent = new  Intent(HomeActivity.this, ActivityChercher.class);
+        startActivity(intent);
+    }
+    private void startActivityMaps() {
+        Intent intent = new Intent(HomeActivity.this, ActivityMaps.class);
+        startActivity(intent);
+    }
+
+    private void startActivityLeave() {
+        Intent intent = new Intent(HomeActivity.this, ActivityLeave.class);
+        startActivity(intent);
+    }
+    private void startActivityInformation() {
+        Intent intent = new  Intent(HomeActivity.this, ActivityInformation.class);
+        startActivity(intent);
+    }
+    private void startActivityProfil() {
+        Intent intent = new  Intent(HomeActivity.this, ActivityProfil.class);
         startActivity(intent);
     }
 }
